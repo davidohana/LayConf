@@ -62,6 +62,12 @@ file_backup_count: 300
 ### ToDo:
 
 * Packaging to pip
- 
+
+### Credit:
+
+This code is a modified version of https://medium.com/@unpluggedcoder/python-config-parser-compatible-with-environment-variable-8c5c46145a46.
+Thanks @UnpluggedCoder
+
+  
 ### License: 
 Apache-2.0
