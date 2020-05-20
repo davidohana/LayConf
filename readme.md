@@ -44,7 +44,23 @@ log_section = LayConf.getsection("LOG")
 print("file_enabled:", log_section["file_enabled"])
 print("file_backup_count:", log_section.getint("file_backup_count"))
 ```
+Output:
 
+```
+% example_LOG_file_backup_count=300 python example_app.py
+config env prefix: example
+config default: cfg/default.ini
+config custom: cfg/staging.ini
+env_name: staging
+console_enabled: True
+file_rotation_size_mb: 10
+file_rotation_size_mb: 10
+'foo' not found
+foo: bar
+foo_number: 33
+file_enabled: true
+file_backup_count: 300
+```
 ### ToDo:
 
 * Packaging to pip

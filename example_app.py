@@ -2,7 +2,8 @@ from layconf import LayConf
 
 # the default config file is cfg/default.ini unless specified other
 # custom_config_file_path is an optional layer
-# env_prefix is empty by default, which means that environment variable names will be mapped to {section}_{option}
+# env_prefix is empty by default, which means that environment variable names will be
+# mapped to {section}_{option}
 LayConf.init_config(custom_config_file_path="cfg/staging.ini", env_prefix="example")
 
 print("env_name:", LayConf.get("DATABASE", "env_name"))
