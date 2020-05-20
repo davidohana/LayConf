@@ -13,7 +13,7 @@ Each config option lookup will fallback to next layer if not found in the presen
 Convention for env. vars is `{prefix}_{section}_{option}` or `{section}_{option}` if prefix is empty. For example: `LOG_file_backup_count=100`
 
 All lookups are case sensitive.    
- 
+No external dependencies. 
 
  ### Example
 ```python
@@ -26,7 +26,6 @@ LayConf.init_config(custom_config_file_path="cfg/staging.ini", env_prefix="examp
 
 print("env_name:", LayConf.get("DATABASE", "env_name"))
 print("console_enabled:", LayConf.getboolean("LOG", "console_enabled"))
-print("file_rotation_size_mb:", LayConf.getint("LOG", "file_rotation_size_mb"))
 print("file_rotation_size_mb:", LayConf.getint("LOG", "file_rotation_size_mb"))
 
 # dealing with not exist keys
@@ -53,7 +52,6 @@ config default: cfg/default.ini
 config custom: cfg/staging.ini
 env_name: staging
 console_enabled: True
-file_rotation_size_mb: 10
 file_rotation_size_mb: 10
 'foo' not found
 foo: bar

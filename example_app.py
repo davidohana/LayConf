@@ -11,7 +11,6 @@ def main():
     print("env_name:", LayConf.get("DATABASE", "env_name"))
     print("console_enabled:", LayConf.getboolean("LOG", "console_enabled"))
     print("file_rotation_size_mb:", LayConf.getint("LOG", "file_rotation_size_mb"))
-    print("file_rotation_size_mb:", LayConf.getint("LOG", "file_rotation_size_mb"))
 
     # dealing with not exist keys
     # be default - raise an Error, as it is recommended to keep defaults for all fields in default.ini
