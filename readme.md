@@ -66,5 +66,4 @@ file_backup_count: 300
 * Packaging to pip
  
 ### License: 
-
-Apache V2
+Apache-2.0

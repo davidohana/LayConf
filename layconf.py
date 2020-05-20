@@ -1,3 +1,9 @@
+"""
+LayConf - Layered Configuration Parser for Python3
+Written by david.ohana@ibm.com
+License: Apache-2.0
+"""
+
 import configparser
 import os
 
