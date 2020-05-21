@@ -16,6 +16,29 @@ All lookups are case sensitive.
 No external dependencies. 
 
  ### Example
+First Layer of configuration is `cfg/default.ini` with all default values:
+```ini
+[LOG]
+console_enabled = true
+console_level = INFO
+file_enabled = true
+file_rotation_size_mb = 10
+file_backup_count = 1000
+
+[DATABASE]
+endpoint =
+env_name = default
+query_filter =
+```
+
+Second Layer of configuration `cfg/staging.ini`, override just what you want to change:
+```ini
+[DATABASE]
+env_name = staging
+endpoint = staging:3001
+```
+
+Application code: 
 ```python
 from layconf import LayConf
 
@@ -63,7 +86,8 @@ file_backup_count: 300
 ### ToDo:
 
 * Packaging to pip
-* Command Line args layer
+* Command-Line arguments layer
+* Flexible number of file layers
 
 ### Credit:
 
