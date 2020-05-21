@@ -31,7 +31,7 @@ env_name = default
 query_filter =
 ```
 
-Second Layer of configuration `cfg/staging.ini`, override just what you want to change:
+Second Layer of configuration is `cfg/staging.ini`, override just what you want to change:
 ```ini
 [DATABASE]
 env_name = staging
